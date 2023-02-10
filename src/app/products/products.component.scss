@@ -1,3 +1,5 @@
+@use 'src/assets/styles/colors' as colors;
+
 .products-container {
   width: 100%;
   display: grid;
@@ -10,14 +12,16 @@
 section.header {
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
+
   .filter-select {
     width: 150px;
   }
+
   #btn-cart {
-    background-color: white;
-    border: 1px solid gray;
-    color: black;
+    background-color: colors.$White;
+    border: 1px solid colors.$Gray;
+    color: colors.$Black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;

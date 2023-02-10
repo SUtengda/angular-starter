@@ -1,3 +1,5 @@
+@use 'src/assets/styles/colors' as colors;
+
 .product-card {
   width: 250px;
   height: 200px;
@@ -25,11 +27,11 @@
       border: none;
 
       &.btn-quantity {
-        background-color: skyblue;
+        background-color: colors.$Skyblue;
       }
 
       &.btn-add {
-        background-color: #4CAF50;
+        background-color: colors.$FruitSalad;
         cursor: pointer;
       }
     }
@@ -40,7 +42,7 @@
     }
 
     .not-available {
-      color: gray;
+      color: colors.$Gray;
     }
   }
 }

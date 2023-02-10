@@ -1,19 +1,21 @@
+@use 'src/assets/styles/colors' as colors;
+
 #btn-back-to-products {
   text-align: center;
   text-decoration: none;
   padding: 10px;
   border: none;
   cursor: pointer;
-  background-color: #1dabd9;
-  color: white;
+  background-color: colors.$CuriousBlue;
+  color: colors.$White;
   font-size: 16px;
   line-height: 16px;
 }
 
 .btn-remove {
-  background-color: #fd4c51;
+  background-color: colors.$SunsetOrange;
   border: none;
-  color: white;
+  color: colors.$White;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -30,8 +32,8 @@
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 20px;
-  background-color: #ff9800;
-  color: white;
+  background-color: colors.$OrangePeel;
+  color: colors.$White;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -41,9 +43,9 @@
   margin-top: 20px;
 
   .total-info {
-    background-color: white;
-    color: black;
-    border: 2px solid #4CAF50;
+    background-color: colors.$White;
+    color: colors.$Black;
+    border: 2px solid colors.$FruitSalad;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -65,37 +67,39 @@ table.sticky-headers {
 .product-table-container {
   max-height: 350px;
   overflow-y: auto;
+
   .product-table {
     tr:nth-child(even) {
-      background-color: #f2f2f2;
+      background-color: colors.$Concrete;
     }
-  
+
     tr:hover {
-      background-color: #ddd;
+      background-color: colors.$Alto;
     }
-  
+
     td,
     th {
-      border: 1px solid #ddd;
+      border: 1px solid colors.$Alto;
       padding: 8px;
     }
-  
+
     th {
       padding-top: 12px;
       padding-bottom: 12px;
       text-align: left;
-      background-color: #04AA6D;
-      color: white;
+      background-color: colors.$GreenHaze;
+      color: colors.$White;
     }
-  
+
   }
 }
 
 @media only screen and (max-width: 800px) {
   .product-table-container {
     max-height: 500px;
+
     .product-table {
-  
+
       thead,
       tbody,
       th,
@@ -103,28 +107,30 @@ table.sticky-headers {
       tr {
         display: block;
       }
-  
+
       /* Hide table headers (but not display: none;, for accessibility) */
       thead tr {
         position: absolute;
         top: -9999px;
         left: -9999px;
       }
+
       tbody tr {
         td {
           position: relative;
-          padding-left: 50%; 
+          padding-left: 50%;
           white-space: normal;
-          text-align:left;
+          text-align: left;
+
           &::before {
             content: attr(data-title);
             position: absolute;
             top: 6px;
             left: 6px;
-            width: 45%; 
-            padding-right: 10px; 
+            width: 45%;
+            padding-right: 10px;
             white-space: nowrap;
-            text-align:left;
+            text-align: left;
             font-weight: bold;
           }
         }
