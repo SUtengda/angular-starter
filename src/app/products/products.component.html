@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>List product</h1>
+  <ng-container *ngIf="products$ | async as products">
+    <section class="header">
+      <ng-select class="filter-select" [items]="products | uniqueCategories" [(ngModel)]="selectedCategory"
+        [placeholder]="'category'">
+      </ng-select>
+      <a routerLink="/cart" id="btn-cart">
+        <span>Panier </span> 
+        <span id="product-counter" *ngIf="cartProducts$ | async as cartProducts">
+          {{cartProducts | totalProductCount}}
+        </span>
+      </a>
+    </section>
+    <section class="products-container">
+      <app-product *ngFor="let product of products | filter: selectedCategory" [product]="product"
+        (addToCartEvent)="addToCart($event)">
+      </app-product>
+    </section>
+
+  </ng-container>
+
+</div>

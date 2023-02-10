@@ -1,0 +1,46 @@
+.product-card {
+  width: 250px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+
+  &_header {
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+  }
+
+  &_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .btn {
+      text-align: center;
+      text-decoration: none;
+      padding: 10px;
+      border: none;
+
+      &.btn-quantity {
+        background-color: skyblue;
+      }
+
+      &.btn-add {
+        background-color: #4CAF50;
+        cursor: pointer;
+      }
+    }
+
+    .input-quantity {
+      width: 40px;
+      height: 30px;
+    }
+
+    .not-available {
+      color: gray;
+    }
+  }
+}
