@@ -12,12 +12,11 @@
         </span>
       </a>
     </section>
+
     <section class="products-container">
       <app-product *ngFor="let product of products | filter: selectedCategory" [product]="product"
         (addToCartEvent)="addToCart($event)">
       </app-product>
     </section>
-
   </ng-container>
-
 </div>

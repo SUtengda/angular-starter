@@ -9,10 +9,6 @@ export interface IProduct {
   category: string;
 }
 
-export interface ICartProduct extends IProduct {
-  addedQuantity: number;
-}
-
 export type ProductTaxCal = Pick<IProduct, "category" | "isImported" | "price"> 
 
 export class cartProduct implements IProduct {
