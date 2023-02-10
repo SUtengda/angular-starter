@@ -18,14 +18,14 @@
         </thead>
         <tbody>
           <tr class="product-list" *ngFor="let product of products">
-            <td>{{product.productName}}</td>
-            <td>
+            <td data-title="Name">{{product.productName}}</td>
+            <td data-title="Qte">
               {{product.addedQuantity}}
               <button class="btn-remove" (click)="decreaseQuantity(product)"> - </button>
             </td>
-            <td>{{product.tax}}</td>
-            <td>{{product.price | currency: 'EUR': 'symbol' }}</td>
-            <td>{{product.priceWithTax| currency: 'EUR': 'symbol' }}</td>
+            <td data-title="Taxes">{{product.tax}}</td>
+            <td data-title="Prix unitaire HT">{{product.price | currency: 'EUR': 'symbol' }}</td>
+            <td data-title="Prix unitaire TTC">{{product.priceWithTax| currency: 'EUR': 'symbol' }}</td>
           </tr>
         </tbody>
       </table>
