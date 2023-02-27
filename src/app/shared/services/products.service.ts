@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { APIs } from 'src/environments/environment';
 import { IProduct } from '../models/product.model';
 
 @Injectable({
@@ -8,7 +9,7 @@ import { IProduct } from '../models/product.model';
 })
 export class ProductsService {
 
-  readonly _mockProductsURL = "assets/products.json";
+  readonly _mockProductsURL = APIs.products;
   private _products = new BehaviorSubject<IProduct[]>([]);
   readonly products$: Observable<IProduct[]> = this._products.asObservable();
 
