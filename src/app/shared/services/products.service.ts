@@ -30,4 +30,11 @@ export class ProductsService {
     this.httpClient.get<IProduct[]>(this._mockProductsURL).subscribe(products => this.products = products);
   }
 
+  // initProducts() {
+  //   this.getProducts().subscribe(products => this.products = products);
+  // }
+
+  // getProducts(): Observable<IProduct[]> {
+  //   return this.httpClient.get<IProduct[]>(this._mockProductsURL);
+  // }
 }

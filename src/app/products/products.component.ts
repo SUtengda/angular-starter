@@ -23,6 +23,9 @@ export class ProductsComponent {
     this.cartProducts$ = this.cartService.cartProducts$;
   }
 
+  // ngOnInit(): void {
+  //   this.productsService.initProducts();
+  // }
   addToCart(e: IAddToCartEventData) {
     this.cartService.addToCart(e.product, e.quantity)
   }
