@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pacifica-kata-cart": {
+    "angular-scss-starter": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pacifica-kata-cart",
+            "outputPath": "dist/angular-scss-starter",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "pacifica-kata-cart:build:production"
+              "browserTarget": "angular-scss-starter:build:production"
             },
             "development": {
-              "browserTarget": "pacifica-kata-cart:build:development"
+              "browserTarget": "angular-scss-starter:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pacifica-kata-cart:build"
+            "browserTarget": "angular-scss-starter:build"
           }
         },
         "test": {
