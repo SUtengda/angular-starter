@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CartComponent } from './cart/cart.component';
 import { ProductsComponent } from './products/products.component';
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
@@ -11,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'cart',
-    component: CartComponent
+    loadChildren: () => import('./cart/cart.module').then(m => m.CartModule)
   },
   { path: '', redirectTo: '/products', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }

@@ -5,11 +5,13 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { TotalPriceWithTaxPipe } from './pipes/totalPriceWithTax.pipe';
 import { TotalTaxPipe } from './pipes/totalTax.pipe';
+import { CartRoutingModule } from './cart-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
+    CartRoutingModule,
     SharedModule
   ],
   declarations: [CartComponent, TotalPriceWithTaxPipe, TotalTaxPipe]
