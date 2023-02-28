@@ -1,9 +1,103 @@
-# angular scss starter
+# Angular scss starter
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
-## What's included?
-
+## Project architecture
+```
+angular-scss-start
+├─ 📁.angular
+├─ 📁.vscode
+│  ├─ 📄extensions.json
+│  ├─ 📄launch.json
+│  └─ 📄tasks.json
+├─ 📁src
+│  ├─ 📁app
+│  │  ├─ 📁cart
+│  │  │  ├─ 📁pipes
+│  │  │  │  ├─ 📄totalPriceWithTax.pipe.spec.ts
+│  │  │  │  ├─ 📄totalPriceWithTax.pipe.ts
+│  │  │  │  ├─ 📄totalTax.pipe.spec.ts
+│  │  │  │  └─ 📄totalTax.pipe.ts
+│  │  │  ├─ 📄cart-routing.module.ts
+│  │  │  ├─ 📄cart.component.html
+│  │  │  ├─ 📄cart.component.scss
+│  │  │  ├─ 📄cart.component.spec.ts
+│  │  │  ├─ 📄cart.component.ts
+│  │  │  └─ 📄cart.module.ts
+│  │  ├─ 📁products
+│  │  │  ├─ 📁components
+│  │  │  │  └─ 📁product
+│  │  │  │     ├─ 📄product.component.html
+│  │  │  │     ├─ 📄product.component.scss
+│  │  │  │     ├─ 📄product.component.spec.ts
+│  │  │  │     └─ 📄product.component.ts
+│  │  │  ├─ 📁models
+│  │  │  │  └─ 📄products.interfaces.ts
+│  │  │  ├─ 📁pipes
+│  │  │  │  ├─ 📄filter.pipe.spec.ts
+│  │  │  │  ├─ 📄filter.pipe.ts
+│  │  │  │  ├─ 📄totalProductCount.pipe.spec.ts
+│  │  │  │  ├─ 📄totalProductCount.pipe.ts
+│  │  │  │  ├─ 📄uniqueCategories.pipe.spec.ts
+│  │  │  │  └─ 📄uniqueCategories.pipe.ts
+│  │  │  ├─ 📄products.component.html
+│  │  │  ├─ 📄products.component.scss
+│  │  │  ├─ 📄products.component.spec.ts
+│  │  │  ├─ 📄products.component.ts
+│  │  │  └─ 📄products.module.ts
+│  │  ├─ 📁shared
+│  │  │  ├─ 📁consts
+│  │  │  │  └─ 📄common.ts
+│  │  │  ├─ 📁models
+│  │  │  │  └─ 📄product.model.ts
+│  │  │  ├─ 📁page-not-found
+│  │  │  │  └─ 📄page-not-found.component.ts
+│  │  │  ├─ 📁pipes
+│  │  │  │  └─ 📄priceWithTax.pipe.ts
+│  │  │  ├─ 📁services
+│  │  │  │  ├─ 📄cart.service.spec.ts
+│  │  │  │  ├─ 📄cart.service.ts
+│  │  │  │  ├─ 📄products.service.spec.ts
+│  │  │  │  └─ 📄products.service.ts
+│  │  │  ├─ 📁utils
+│  │  │  │  ├─ 📄calc-tax.spec.ts
+│  │  │  │  └─ 📄calc-tax.ts
+│  │  │  └─ 📄shared.module.ts
+│  │  ├─ 📄app-routing.module.ts
+│  │  ├─ 📄app.component.html
+│  │  ├─ 📄app.component.scss
+│  │  ├─ 📄app.component.spec.ts
+│  │  ├─ 📄app.component.ts
+│  │  └─ 📄app.module.ts
+│  ├─ 📁assets
+│  │  ├─ 📁styles
+│  │  │  ├─ 📄_breakpoint.scss
+│  │  │  ├─ 📄_colors.scss
+│  │  │  └─ 📄_mixin.scss
+│  │  ├─ 📄.gitkeep
+│  │  └─ 📄products.json
+│  ├─ 📁environments
+│  │  ├─ 📁utils
+│  │  │  ├─ 📄endpoints.ts
+│  │  │  └─ 📄env.model.ts
+│  │  ├─ 📄environment.prod.ts
+│  │  └─ 📄environment.ts
+│  ├─ 📄favicon.ico
+│  ├─ 📄index.html
+│  ├─ 📄main.ts
+│  └─ 📄styles.scss
+├─ 📄.editorconfig
+├─ 📄.eslintrc.json
+├─ 📄.gitignore
+├─ 📄README.md
+├─ 📄angular.json
+├─ 📄kata Cart - specific.docx
+├─ 📄package-lock.json
+├─ 📄package.json
+├─ 📄tsconfig.app.json
+├─ 📄tsconfig.json
+└─ 📄tsconfig.spec.json
+```
 
 ## Some useful command
 ### Development server
