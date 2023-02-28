@@ -13,7 +13,7 @@ import { CartComponent } from '../cart/cart.component';
 import { CartService } from '../shared/services/cart.service';
 import { ProductsService } from '../shared/services/products.service';
 import { of } from 'rxjs';
-import { ProductComponent } from './product/product.component';
+import { ProductComponent } from './components/product/product.component';
 import { SharedModule } from '../shared/shared.module';
 import { Location } from '@angular/common';
 

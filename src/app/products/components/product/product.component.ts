@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IProduct } from 'src/app/shared/models/product.model';
-import { IAddToCartEventData } from '../models/products.interfaces';
+import { IAddToCartEventData } from '../../models/products.interfaces';
 
 @Component({
   selector: 'app-product',
