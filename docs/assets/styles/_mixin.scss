@@ -1,0 +1,7 @@
+@use './breakpoint' as breakpoint;
+
+@mixin tablet-down {
+  @media (max-width: #{breakpoint.$Tablet}) {
+    @content;
+  }
+}
