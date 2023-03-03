@@ -40,7 +40,7 @@ describe('ProductComponent', () => {
     component.product = mockProduct;
     fixture.detectChanges();
     const addBtn = fixture.debugElement.query(By.css('.btn-add'));
-    expect(addBtn.nativeElement.innerHTML).toContain('Ajouter');
+    expect(addBtn.nativeElement.innerHTML).toContain('Add');
   });
   it('should add button be disable when quantity is 0', () => {
     mockProduct.quantity = 0;
@@ -49,12 +49,12 @@ describe('ProductComponent', () => {
     const addBtn = fixture.debugElement.query(By.css('.btn-add'));
     expect(addBtn.nativeElement.disabled).toBeTruthy();
   });
-  it('should show Non disponible when quantity is 0', () => {
+  it('should show Not available when quantity is 0', () => {
     component.product = mockProduct;
     mockProduct.quantity = 0;
     fixture.detectChanges();
     const messageDom = fixture.debugElement.query(By.css('.not-available'));
-    expect(messageDom.nativeElement.innerHTML).toBe('Non disponible');
+    expect(messageDom.nativeElement.innerHTML).toBe('Not available');
   });
   it('should show available quantity', () => {
     component.product = mockProduct;

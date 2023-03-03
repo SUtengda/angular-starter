@@ -81,13 +81,13 @@ describe('CartComponent', () => {
     expect(productTableDom).toBeTruthy();
   });
   
-  it('should display message <<panier vide>>', () => {
+  it('should display message <<Empty cart>>', () => {
     component.cartProducts$ = of([]);
     fixture.detectChanges();
     const messageDom = fixture.debugElement.query(By.css('.empty-cart'));
 
     expect(messageDom).toBeTruthy();
-    expect(messageDom.nativeElement.innerText).toBe("Panier vide");
+    expect(messageDom.nativeElement.innerText).toBe("Empty cart");
   });
   it('should call decrease function', () => {
 
