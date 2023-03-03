@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:prod": "ng build --configuration production",
-    "build:gb_page": "ng build --output-path docs --base-href /angular-scss-starter/ && cp docs/index.html docs/404.html",
+    "build:gb_page": "ng build --output-path docs --base-href /angular-starter/ && cp docs/index.html docs/404.html",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint"
