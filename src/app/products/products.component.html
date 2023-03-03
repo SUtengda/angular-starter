@@ -6,7 +6,7 @@
         [placeholder]="'category'">
       </ng-select>
       <a routerLink="/cart" id="btn-cart">
-        <span>Panier </span> 
+        <span>Cart </span> 
         <span id="product-counter" *ngIf="cartProducts$ | async as cartProducts">
           {{cartProducts | totalProductCount}}
         </span>

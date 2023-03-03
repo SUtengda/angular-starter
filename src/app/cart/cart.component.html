@@ -10,32 +10,32 @@
         <thead>
           <tr>
             <th>Name</th>
-            <th>Qte</th>
-            <th>Taxes</th>
-            <th>Prix unitaire HT</th>
-            <th>Prix unitaire TTC</th>
+            <th>Qty</th>
+            <th>Tax</th>
+            <th>Unit price excluding tax</th>
+            <th>Unit price with tax</th>
           </tr>
         </thead>
         <tbody>
           <tr class="product-list" *ngFor="let product of products">
             <td data-title="Name">{{product.productName}}</td>
-            <td data-title="Qte">
+            <td data-title="Qty">
               {{product.addedQuantity}}
               <button class="btn-remove" (click)="decreaseQuantity(product)"> - </button>
             </td>
-            <td data-title="Taxes">{{product.tax}}</td>
-            <td data-title="Prix unitaire HT">{{product.price | currency: 'EUR': 'symbol' }}</td>
-            <td data-title="Prix unitaire TTC">{{product.priceWithTax| currency: 'EUR': 'symbol' }}</td>
+            <td data-title="Tax">{{product.tax}}</td>
+            <td data-title="Unit excluding tax">{{product.price | currency: 'EUR': 'symbol' }}</td>
+            <td data-title="Unit price with tax">{{product.priceWithTax| currency: 'EUR': 'symbol' }}</td>
           </tr>
         </tbody>
       </table>
     </div>
     <ng-template #emptyCart>
-      <p class="empty-cart">Panier vide</p>
+      <p class="empty-cart">Empty cart</p>
     </ng-template>
     <div>
-      <p class="total-info">Total taxes: {{products | totalTax | currency: 'EUR': 'symbol' }} </p>
-      <p class="total-info">Total TTC: {{products | totalPriceWithTax | currency: 'EUR': 'symbol' }} </p>
+      <p class="total-info">Total tax: {{products | totalTax | currency: 'EUR': 'symbol' }} </p>
+      <p class="total-info">Total price with tax: {{products | totalPriceWithTax | currency: 'EUR': 'symbol' }} </p>
     </div>
   </section>
 

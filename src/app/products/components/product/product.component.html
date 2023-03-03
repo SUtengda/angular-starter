@@ -3,15 +3,15 @@
     {{product.productName}}
   </div>
   <div class="product-card_content">
-    <p>Categorie: {{product.category}}</p>
-    <p>Prix: {{product | priceWithTax | currency: 'EUR': 'symbol' }}</p>
+    <p>Category: {{product.category}}</p>
+    <p>Price: {{product | priceWithTax | currency: 'EUR': 'symbol' }}</p>
   </div>
   <div class="product-card_footer">
-    <span *ngIf="product.quantity > 0; else notAvailable" class="btn btn-quantity">Qte: {{product.quantity}}</span>
+    <span *ngIf="product.quantity > 0; else notAvailable" class="btn btn-quantity">Qty: {{product.quantity}}</span>
     <ng-template #notAvailable>
-      <span class="not-available">Non disponible</span>
+      <span class="not-available">Not available</span>
     </ng-template>
     <input class="input-quantity" type="number" min="1" [max]="product.quantity" [(ngModel)]="quantity" >
-    <button class="btn btn-add" [disabled]="!product.quantity" (click)="addToCart(product)">Ajouter</button>
+    <button class="btn btn-add" [disabled]="!product.quantity" (click)="addToCart(product)">Add</button>
   </div>
 </div>
