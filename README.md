@@ -1,6 +1,15 @@
 # Angular scss starter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+This project was angular starter generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+
+## Rename project name
+Angular-cli doesn't do renaming, you should manually modify it.
+
+1. Open `angular.json` and `package.json` file
+2. Replace all occurrences of the old name which is angular-scss-starter
+3. Rename project folder name
+4. If `node_modules`folder exist, delete it and reinstall the package
+5. finally run `ng serve` 
 
 ## Project architecture
 ```
