@@ -1,24 +1,46 @@
 # Angular scss starter
 
+This starter allows to begin a new app using Angular 15.
+
 This project was angular starter generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
-## Rename project name
+## Getting started
+
+### Prerequisites
+
+To run your project locally, you need the following installed:
+- [Node.js](https://angular.io/start/start-deployment#:~:text=on%20your%20computer%3A-,Node.js,-.)
+- [Angular CLI](https://github.com/angular/angular-cli)
+
+### Download project 
+
+1. Run `git clone git@github.com:SUtengda/angular-scss-starter.git`
+2. Delete folder `.git` of project (`cd angular-scss-starter` then `rm -rf .git`)
+3. Re run `git init` if necessary
+
+or just unzip the zip folder
+
+### Rename project name
 Angular-cli doesn't do renaming, you should manually modify it.
 
 1. Open `angular.json` and `package.json` file
 2. Replace all occurrences of the old name which is angular-scss-starter
 3. Rename project folder name
 4. If `node_modules`folder exist, delete it and reinstall the package
-5. finally run `ng serve` 
+
+### Install dependencies
+
+Run `npm i` to install the required libraries.
+Then run `ng serve` 
+
+
+### Unit tests
+
+Run `ng test` to execute the example unit tests
 
 ## Project architecture
 ```
 angular-scss-start
-├─ 📁.angular
-├─ 📁.vscode
-│  ├─ 📄extensions.json
-│  ├─ 📄launch.json
-│  └─ 📄tasks.json
 ├─ 📁src
 │  ├─ 📁app
 │  │  ├─ 📁cart
@@ -33,7 +55,7 @@ angular-scss-start
 │  │  │  ├─ 📄cart.component.spec.ts
 │  │  │  ├─ 📄cart.component.ts
 │  │  │  └─ 📄cart.module.ts
-│  │  ├─ 📁products
+│  │  ├─ 📁products  * This directory contains components
 │  │  │  ├─ 📁components
 │  │  │  │  └─ 📁product
 │  │  │  │     ├─ 📄product.component.html
@@ -54,12 +76,12 @@ angular-scss-start
 │  │  │  ├─ 📄products.component.spec.ts
 │  │  │  ├─ 📄products.component.ts
 │  │  │  └─ 📄products.module.ts
-│  │  ├─ 📁shared
+│  │  ├─ 📁shared   * This directory contains services, guards, models, and any other shared code that is used throughout the application.
 │  │  │  ├─ 📁consts
 │  │  │  │  └─ 📄common.ts
 │  │  │  ├─ 📁models
 │  │  │  │  └─ 📄product.model.ts
-│  │  │  ├─ 📁page-not-found
+│  │  │  ├─ 📁page-not-found 
 │  │  │  │  └─ 📄page-not-found.component.ts
 │  │  │  ├─ 📁pipes
 │  │  │  │  └─ 📄priceWithTax.pipe.ts
@@ -85,10 +107,10 @@ angular-scss-start
 │  │  │  └─ 📄_mixin.scss
 │  │  ├─ 📄.gitkeep
 │  │  └─ 📄products.json
-│  ├─ 📁environments
+│  ├─ 📁environments 
 │  │  ├─ 📁utils
-│  │  │  ├─ 📄endpoints.ts
-│  │  │  └─ 📄env.model.ts
+│  │  │  ├─ 📄endpoints.ts  * register backend api route here
+│  │  │  └─ 📄env.model.ts  * this file declare types of endpoint
 │  │  ├─ 📄environment.prod.ts
 │  │  └─ 📄environment.ts
 │  ├─ 📄favicon.ico
@@ -100,7 +122,6 @@ angular-scss-start
 ├─ 📄.gitignore
 ├─ 📄README.md
 ├─ 📄angular.json
-├─ 📄kata Cart - specific.docx
 ├─ 📄package-lock.json
 ├─ 📄package.json
 ├─ 📄tsconfig.app.json
