@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PriceWithTaxPipe } from './pipes/priceWithTax.pipe';
 import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
@@ -8,11 +7,9 @@ import { TranslateModule } from '@ngx-translate/core';
     CommonModule,
     TranslateModule
   ],
-  declarations: [
-    PriceWithTaxPipe  
+  declarations: [  
   ],
   exports: [
-    PriceWithTaxPipe,
     TranslateModule
   ]
 })
