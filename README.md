@@ -15,10 +15,11 @@ To run your project locally, you need the following installed:
 ### Download project 
 
 1. Run `git clone git@github.com:SUtengda/angular-scss-starter.git`
+or `git clone --branch=feat/clean git@github.com:SUtengda/angular-scss-starter.git` where I kept only necessary code to run application.
 2. Delete folder `.git` of project (`cd angular-scss-starter` then `rm -rf .git`)
 3. Re run `git init` if necessary
 
-or just unzip the zip folder
+or just download zip folder
 
 ### Rename project name
 Angular-cli doesn't do renaming, you should manually modify it.
