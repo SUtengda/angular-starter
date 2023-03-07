@@ -1,6 +1,6 @@
-# Angular scss starter
+# Angular starter
 
-This starter allows to begin a new app using Angular 15.
+This angular starter allows to begin a new app using Angular 15.
 
 This project was angular starter generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
@@ -14,9 +14,9 @@ To run your project locally, you need the following installed:
 
 ### Download project 
 
-1. Run `git clone git@github.com:SUtengda/angular-scss-starter.git`
-or `git clone --branch=feat/clean git@github.com:SUtengda/angular-scss-starter.git` where I kept only necessary code to run application.
-2. Delete folder `.git` of project (`cd angular-scss-starter` then `rm -rf .git`)
+1. Run `git clone git@github.com:SUtengda/angular-starter.git`
+or `git clone --branch=feat/clean git@github.com:SUtengda/angular-starter.git` where I kept only necessary code to run application.
+2. Delete folder `.git` of project (`cd angular-starter` then `rm -rf .git`)
 3. Re run `git init` if necessary
 
 or just download zip folder
@@ -25,7 +25,7 @@ or just download zip folder
 Angular-cli doesn't do renaming, you should manually modify it.
 
 1. Open `angular.json` and `package.json` file
-2. Replace all occurrences of the old name which is angular-scss-starter
+2. Replace all occurrences of the old name which is angular-starter
 3. Rename project folder name
 4. If `node_modules`folder exist, delete it and reinstall the package
 
